@@ -1,0 +1,15 @@
+.bg-container-sign-in {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10%;
+}
+
+.heading {
+  text-align: center;
+}
+
+.sign-in-email-container {
+  margin-top: 20px;
+}

@@ -1,6 +1,8 @@
 import Cookies from 'js-cookie'
 import {Redirect} from 'react-router-dom'
 
+import './index.css'
+
 const Home = props => {
   const details = JSON.parse(localStorage.getItem('current_user'))
   const jwtToken = Cookies.get('jwt_token')

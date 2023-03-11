@@ -1,6 +1,8 @@
 import {Component} from 'react'
 import {Link} from 'react-router-dom'
 
+import './index.css'
+
 class SignIn extends Component {
   state = {username: '', password: '', isError: false, errorMsg: ''}
 
@@ -63,11 +65,13 @@ class SignIn extends Component {
     const {username, password, isError, errorMsg} = this.state
 
     return (
-      <div className="bg-container">
+      <div className="bg-container-sign-in">
         <form onSubmit={this.onSignUp} className="sign-in-container">
-          <h1 className="main-heading">Create Account</h1>
-          <div className="email-container">
-            <label htmlFor="name">Email</label>
+          <h1 className="main-heading heading">Create Account</h1>
+          <div className="email-container sign-in-email-container">
+            <label htmlFor="name" className="main-para">
+              Email
+            </label>
             <br />
             <input
               type="text"
@@ -80,7 +84,9 @@ class SignIn extends Component {
             />
           </div>
           <div className="email-container">
-            <label htmlFor="pass">Password</label>
+            <label htmlFor="pass" className="main-para">
+              Password
+            </label>
             <br />
             <input
               type="password"
@@ -94,7 +100,9 @@ class SignIn extends Component {
           </div>
 
           <div className="email-container">
-            <label htmlFor="Repass">RE-Enter Password</label>
+            <label htmlFor="Repass" className="main-para">
+              RE-Enter Password
+            </label>
             <br />
             <input
               type="password"
